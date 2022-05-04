@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet"
+    href="style.css">
+
+    <title>Food For Thought</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>Food For Thought</h1>
+
+   <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="img/slideshow/stroganoff.jpg" class="slideshow_pics">
+   </div>
+
+   <div class="mySlides fade">
+    <img src="img/slideshow/sweetnsour.jpg" class="slideshow_pics">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/slideshow/bao.jpg" class="slideshow_pics">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/slideshow/sushi.jpg" class="slideshow_pics">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/slideshow/macarons.jpg" class="slideshow_pics">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/slideshow/cake.jpg" class="slideshow_pics">
+  </div>
+
+    <h2>A little place on the internet for some dinner inspiration!</h2>
+   <a href="MushroomS.html"><button class="button">Mushroom Stroganoff</button></a> 
+   <br>
+   <a href="sweetnsour.html"><button class="button">Best Sweet 'n' Sour</button></a>
+   <br>
+   <a href="https://youtu.be/dQw4w9WgXcQ"><button class="button">Do you hear something?</button></a>
+   <h3>All Images sourced from <strong>create.vista.com</strong></h3>
+
+   <footer>
+    <a href="https://twitter.com" target="_blank">
+      <span class='social-icon'><i class="fab fa-twitter"></i></span>
+    </a>
+    <a href="https://facebook.com" target="_blank">
+      <span class='social-icon'><i class="fab fa-facebook-f"></i></span>
+      
+    </a>
+    <a href="https://instagram.com" target="_blank">
+      <span img src="img/insta.jfif" class="social-icon"><i class="fab fa-instagram"></i></span>
+    </a>
+  </footer>
+
+<script> 
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 3500);
+}
+</script>
+
